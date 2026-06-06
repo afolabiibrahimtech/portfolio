@@ -35,7 +35,7 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--dark);
 }
@@ -44,11 +44,21 @@ nav {
   color: #6366f1;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;                       /* Nice spacing between links */
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
 .nav-links a {
-  margin-left: 2rem;
   text-decoration: none;
   color: var(--dark);
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 .contact-btn {
@@ -286,16 +296,19 @@ footer {
 }
 
 .resume-btn {
-  background: var(--dark);
-  color: white;
+  background: #1e2937 !important;
+  color: white !important;
   padding: 8px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
 }
 
 .resume-btn:hover {
-  background: #0ea5e9;
+  background: #6b7d87 !important;
+  color: white !important;
   transform: translateY(-2px);
 }
+
