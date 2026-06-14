@@ -1,0 +1,261 @@
+/* ============================================================
+   Keyscape Homes project page
+   Brand: #3a6b52 forest green — Keyscape Homes
+   ============================================================ */
+
+:root {
+  --brand:      #3a6b52;
+  --brand-dark: #2e5440;
+  --brand-lt:   #edf4f0;
+  --brand-glow: rgba(58,107,82,0.22);
+}
+
+body { background: #f8fafc; color: #334155; padding: 0; max-width: none; }
+
+/* ── Hero ──────────────────────────────────────────────────── */
+.project-hero {
+  min-height: 72vh;
+  background: linear-gradient(150deg, #060f0a 0%, #0d1a13 50%, #0f172a 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 120px 5% 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold radial glow top-right */
+.project-hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 480px; height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--brand-glow), transparent 68%);
+  pointer-events: none;
+}
+
+/* Subtle grid texture */
+.project-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(58,107,82,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58,107,82,0.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+  pointer-events: none;
+}
+
+.project-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+  opacity: 0.9;
+}
+.back-link:hover { color: white; opacity: 1; }
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 1rem;
+}
+
+.project-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  color: #6aaf8a;
+  opacity: 0.85;
+  margin-bottom: 2.8rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+/* Meta */
+.project-meta {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2.8rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(58,107,82,0.2);
+}
+.meta-item { display: flex; flex-direction: column; gap: 5px; }
+.meta-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(58,107,82,0.7);
+}
+.meta-value { font-size: 0.97rem; font-weight: 500; color: #e2e8f0; }
+
+/* CTA */
+.project-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 13px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.brand-btn {
+  background: var(--brand);
+  color: #0d1a13;
+  font-weight: 700;
+  box-shadow: 0 8px 24px var(--brand-glow);
+}
+.brand-btn:hover {
+  background: #4d8f6d;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(58,107,82,0.35);
+}
+
+.outline-btn {
+  background: rgba(255,255,255,0.06);
+  color: white;
+  border: 1.5px solid rgba(255,255,255,0.18);
+}
+.outline-btn:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+/* ── Preview ───────────────────────────────────────────────── */
+.project-preview {
+  padding: 70px 5%;
+  background: #060f0a;
+}
+
+.preview-inner { max-width: 1100px; margin: 0 auto; }
+
+.browser-mockup {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(58,107,82,0.2);
+}
+
+.browser-bar {
+  background: #0d1a13;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dot { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
+
+.browser-url {
+  margin-left: 14px;
+  font-size: 0.78rem;
+  color: rgba(58,107,82,0.55);
+  font-family: monospace;
+  letter-spacing: 0.02em;
+}
+
+.browser-screen { background: #3a6b52; max-height: 520px; overflow: hidden; }
+.browser-screen img { width: 100%; display: block; object-fit: cover; object-position: top; }
+
+/* ── Overview ──────────────────────────────────────────────── */
+.project-body { padding: 90px 5%; background: white; }
+.body-inner { max-width: 1100px; margin: 0 auto; }
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.overview-text h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 1.4rem;
+  position: relative;
+  display: inline-block;
+}
+.overview-text h2::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -8px;
+  width: 40px; height: 4px;
+  border-radius: 4px;
+  background: var(--brand);
+}
+.overview-text p {
+  color: #475569;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+}
+
+/* Feature list */
+.feature-list {
+  background: var(--brand-lt);
+  border-radius: 16px;
+  padding: 2rem 2.2rem;
+  border-top: 3px solid var(--brand);
+}
+.feature-list h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--dark);
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.01em;
+}
+.feature-list ul {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 0.95rem;
+}
+.feature-list li {
+  display: flex; align-items: center; gap: 12px;
+  color: #334155; font-size: 0.97rem; font-weight: 500;
+}
+.feature-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0;
+  background: rgba(58,107,82,0.15);
+  color: var(--brand-dark);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .overview-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .project-meta  { gap: 1.8rem; }
+}

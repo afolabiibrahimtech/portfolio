@@ -429,6 +429,40 @@ body.nav-open {
   background: var(--dark);
 }
 
+/* Project tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #cbd5e1;
+}
+
+/* Porchlight amber accent */
+.porchlight-card {
+  border-top: 3px solid #f59e0b;
+}
+
+.porchlight-img {
+  background: #fef3c7;
+}
+
+.porchlight-img img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
 /* ==================== CONTACT ==================== */
 #contact {
   padding: 100px 5%;
@@ -668,4 +702,44 @@ footer {
     width: 220px;
     height: 220px;
   }
+}
+
+/* Tails & Toys — portfolio blue accent */
+.tails-card {
+  border-top: 3px solid #0ea5e9;
+}
+.tails-img {
+  background: #f0f9ff;
+}
+.tails-img img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+/* Dual link row on project cards */
+.card-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.secondary-link {
+  color: #94a3b8 !important;
+  font-size: 0.88rem;
+}
+
+.secondary-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Keyscape Homes — forest green accent */
+.keyscape-card {
+  border-top: 3px solid #3a6b52;
+}
+.keyscape-img {
+  background: #0d1a13;
+}
+.keyscape-img img {
+  object-fit: cover !important;
+  padding: 0 !important;
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo App | Ibrahim Afolabi</title>
+  <title>Keyscape Homes | Ibrahim Afolabi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAV (identical to homepage) -->
   <nav>
     <div class="nav-container">
       <div class="logo">
@@ -34,44 +33,46 @@
     <a href="../index.html#contact"><span class="num">04</span>Contact</a>
   </div>
 
-  <!-- PROJECT HERO -->
+  <!-- HERO -->
   <section class="project-hero">
     <div class="project-hero-inner">
-      <a href="../index.html#projects" class="back-link">← Back to Projects</a>
-      <p class="eyebrow">Featured Project</p>
-      <h1>Todo App</h1>
-      <p class="project-subtitle">Modern Task Management Application</p>
+      <a href="../index.html#projects" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to Projects
+      </a>
+      <p class="eyebrow">Shortlet Booking Platform · Lagos, Nigeria</p>
+      <h1>Keyscape Homes</h1>
+      <p class="project-subtitle">"Stay Different. Stay Premium."</p>
 
       <div class="project-meta">
         <div class="meta-item">
           <span class="meta-label">Role</span>
-          <span class="meta-value">Designer & Developer</span>
+          <span class="meta-value">Designer &amp; Developer</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">Tech</span>
-          <span class="meta-value">HTML · CSS · JavaScript</span>
+          <span class="meta-value">HTML · CSS · JS · Firebase</span>
         </div>
         <div class="meta-item">
-          <span class="meta-label">Year</span>
-          <span class="meta-value">2026</span>
+          <span class="meta-label">Auth</span>
+          <span class="meta-value">Google Sign-In</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Status</span>
+          <span class="meta-value">Live</span>
         </div>
       </div>
 
       <div class="project-cta-row">
-        <a href="https://www.figma.com/design/BDUYeptPdAZG81BdeJSniB/Untitled?node-id=1-2&t=eKysUAqTpZQy98aw-1"
-           target="_blank" class="project-btn primary-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-          View Figma Design
-        </a>
-        <a href="https://todo-app-eta-one-93.vercel.app/" target="_blank" class="project-btn secondary-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <a href="https://keyscapehomes.pages.dev/" target="_blank" class="project-btn brand-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           Live Website
         </a>
       </div>
     </div>
   </section>
 
-  <!-- MOCKUP / PREVIEW -->
+  <!-- BROWSER PREVIEW -->
   <section class="project-preview reveal">
     <div class="preview-inner">
       <div class="browser-mockup">
@@ -79,10 +80,10 @@
           <span class="dot red"></span>
           <span class="dot yellow"></span>
           <span class="dot green"></span>
-          <span class="browser-url">todo-app-eta-one-93.vercel.app</span>
+          <span class="browser-url">keyscapehomes.pages.dev</span>
         </div>
         <div class="browser-screen">
-          <img src="../images/To-do.png" alt="Todo App screenshot">
+          <img src="../images/keyscape.png" alt="Keyscape Homes screenshot">
         </div>
       </div>
     </div>
@@ -91,48 +92,79 @@
   <!-- OVERVIEW -->
   <section class="project-body reveal">
     <div class="body-inner">
-
       <div class="overview-grid">
+
         <div class="overview-text">
           <h2>Overview</h2>
-          <p>A full-featured task management app designed from scratch in Figma and built with vanilla JavaScript. Every interaction — filtering, searching, drag & drop reordering — was implemented without a framework to demonstrate core JS fundamentals.</p>
-          <p>The app adapts to any preference with a smooth dark/light mode toggle and persists all tasks via LocalStorage so nothing is lost on page refresh.</p>
+          <p>Keyscape Homes is a full-stack Airbnb-style shortlet booking platform built for the Lagos luxury rental market. Guests can browse verified properties, pick dates on an interactive calendar, and confirm bookings directly via WhatsApp — all in a few taps.</p>
+          <p>Hosts manage their listings through a dedicated portal where they can update availability, block dates on a calendar, edit property details, and track enquiries. Authentication uses Google Sign-In via Firebase so onboarding is instant and secure.</p>
         </div>
+
         <div class="feature-list">
-          <h3>Key Features</h3>
+          <h3>What's Built</h3>
           <ul>
             <li>
-              <span class="feature-icon">✓</span>
-              Due dates with overdue detection
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Full guest booking flow — browse, dates, confirm
             </li>
             <li>
-              <span class="feature-icon">✓</span>
-              Filter by status, priority & category
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Interactive calendar — guests pick check-in &amp; out
             </li>
             <li>
-              <span class="feature-icon">✓</span>
-              Full-text search
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Host portal — edit listings, block calendar dates
             </li>
             <li>
-              <span class="feature-icon">✓</span>
-              Drag & drop reordering
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Google Sign-In via Firebase Auth
             </li>
             <li>
-              <span class="feature-icon">✓</span>
-              Dark / Light mode
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              WhatsApp booking integration — instant host contact
             </li>
             <li>
-              <span class="feature-icon">✓</span>
-              LocalStorage persistence
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Firebase Firestore — real-time listings &amp; bookings
+            </li>
+            <li>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Property search by location or name
+            </li>
+            <li>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Host listing submission &amp; approval flow
+            </li>
+            <li>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Mobile-first responsive design
             </li>
           </ul>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER (identical to homepage) -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-container">
       <div class="footer-cta reveal">
@@ -144,7 +176,7 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="logo"><span class="logo-dots">●</span>PORTFOLIO</div>
-          <p class="footer-tagline">UI/UX Designer & Front-End Developer based in Calgary, Alberta — open to entry-level opportunities in design and development.</p>
+          <p class="footer-tagline">UI/UX Designer &amp; Front-End Developer based in Calgary, Alberta — open to entry-level opportunities in design and development.</p>
           <div class="footer-socials">
             <a href="https://www.linkedin.com/in/ibrahim-afolabi-062348404" target="_blank" class="social-icon" aria-label="LinkedIn">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
@@ -195,21 +227,17 @@
       hamburger.setAttribute('aria-expanded', isOpen);
       document.body.classList.toggle('nav-open', isOpen);
     });
-    navOverlay.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navOverlay.classList.remove('active');
-        hamburger.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      });
-    });
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
-      });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => observer.observe(el));
+    navOverlay.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+      navOverlay.classList.remove('active');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    }));
+    document.querySelectorAll('.reveal').forEach(el =>
+      new IntersectionObserver(([e]) => {
+        if (e.isIntersecting) { el.classList.add('visible'); }
+      }, { threshold: 0.1 }).observe(el)
+    );
   </script>
 
 </body>
