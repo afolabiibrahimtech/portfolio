@@ -743,3 +743,16 @@ footer {
   object-fit: cover !important;
   padding: 0 !important;
 }
+
+/* GitHub card link */
+.gh-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #94a3b8 !important;
+  font-size: 0.88rem;
+  transition: color 0.3s;
+}
+.gh-link:hover {
+  color: white !important;
+}
