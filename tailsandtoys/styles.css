@@ -234,3 +234,17 @@ body {
   .overview-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .project-meta  { gap: 1.8rem; }
 }
+
+/* ── Video player (replaces browser screenshot) ── */
+.video-screen {
+  background: #000;
+  line-height: 0; /* remove gap under video */
+}
+
+.video-screen video {
+  width: 100%;
+  max-height: 560px;
+  display: block;
+  object-fit: contain;
+  background: #000;
+}

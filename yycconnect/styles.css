@@ -1,0 +1,134 @@
+/* ============================================================
+   YYC Connect project page
+   Brand: #3b82f6 blue (matches site's navy/blue theme)
+   ============================================================ */
+
+:root {
+  --brand:      #3b82f6;
+  --brand-dark: #2563eb;
+  --brand-lt:   #eff6ff;
+  --brand-glow: rgba(59,130,246,0.2);
+  --navy:       #0d1b2a;
+}
+
+body { background: #f8fafc; color: #334155; padding: 0; max-width: none; }
+
+/* Hero */
+.project-hero {
+  min-height: 68vh;
+  background: linear-gradient(150deg, var(--navy) 0%, #142838 55%, #0f172a 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 120px 5% 80px;
+  position: relative;
+  overflow: hidden;
+}
+.project-hero::before {
+  content: '';
+  position: absolute;
+  top: -90px; right: -90px;
+  width: 420px; height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--brand-glow), transparent 70%);
+  pointer-events: none;
+}
+.project-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.05) 1px, transparent 1px);
+  background-size: 42px 42px;
+  pointer-events: none;
+}
+.project-hero-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--brand); text-decoration: none; font-weight: 600;
+  font-size: 0.92rem; margin-bottom: 1.8rem; transition: color 0.3s;
+}
+.back-link:hover { color: #93c5fd; }
+
+.eyebrow {
+  display: inline-block; font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--brand); margin-bottom: 0.9rem;
+}
+
+.project-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem;
+}
+.project-subtitle { font-size: 1.2rem; color: #93c5fd; margin-bottom: 2.5rem; }
+
+.project-meta { display: flex; gap: 3rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+.meta-item { display: flex; flex-direction: column; gap: 4px; }
+.meta-label {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--text-muted);
+}
+.meta-value { font-size: 0.97rem; font-weight: 500; color: white; }
+
+.project-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.project-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 13px 28px; border-radius: 999px; text-decoration: none;
+  font-weight: 600; font-size: 0.95rem; transition: all 0.3s;
+}
+.brand-btn { background: var(--brand); color: white; box-shadow: 0 8px 22px var(--brand-glow); }
+.brand-btn:hover { background: var(--brand-dark); transform: translateY(-2px); box-shadow: 0 12px 28px var(--brand-glow); }
+.outline-btn { background: rgba(255,255,255,0.07); color: white; border: 1.5px solid rgba(255,255,255,0.2); }
+.outline-btn:hover { background: rgba(255,255,255,0.14); transform: translateY(-2px); }
+.admin-btn { background: rgba(59,130,246,0.12); color: #93c5fd; border: 1.5px solid rgba(59,130,246,0.35); }
+.admin-btn:hover { background: rgba(59,130,246,0.2); transform: translateY(-2px); }
+
+/* Preview */
+.project-preview { padding: 70px 5%; background: #060d14; }
+.preview-inner { max-width: 1100px; margin: 0 auto; }
+.browser-mockup { border-radius: 16px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.6); }
+.browser-bar { background: #142838; padding: 12px 18px; display: flex; align-items: center; gap: 8px; }
+.dot { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
+.browser-url { margin-left: 12px; font-size: 0.8rem; color: #64748b; font-family: monospace; }
+.browser-screen { background: var(--navy); max-height: 540px; overflow: hidden; }
+.browser-screen img { width: 100%; display: block; object-fit: cover; object-position: top; }
+
+/* Overview + feature list (same pattern as other project pages) */
+.project-body { padding: 90px 5%; background: white; }
+.body-inner { max-width: 1100px; margin: 0 auto; }
+.overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+
+.overview-text h2 {
+  font-family: var(--font-display); font-size: 2rem; font-weight: 700;
+  color: var(--dark); margin-bottom: 1.2rem; position: relative; display: inline-block;
+}
+.overview-text h2::after {
+  content: ''; position: absolute; left: 0; bottom: -8px;
+  width: 40px; height: 4px; border-radius: 4px; background: var(--brand);
+}
+.overview-text p { color: #475569; line-height: 1.8; margin-top: 1.4rem; font-size: 1.05rem; }
+
+.feature-list {
+  background: var(--brand-lt); border-radius: 16px; padding: 2rem 2.2rem;
+  border-top: 3px solid var(--brand);
+}
+.feature-list h3 { font-family: var(--font-display); font-size: 1.05rem; color: var(--dark); margin-bottom: 1.3rem; }
+.feature-list ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+.feature-list li { display: flex; align-items: center; gap: 12px; color: #334155; font-size: 0.95rem; font-weight: 500; }
+.feature-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 23px; height: 23px; border-radius: 50%; flex-shrink: 0;
+  background: rgba(59,130,246,0.15); color: var(--brand-dark);
+}
+
+@media (max-width: 768px) {
+  .overview-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .project-meta { gap: 1.8rem; }
+}

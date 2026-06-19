@@ -756,3 +756,52 @@ footer {
 .gh-link:hover {
   color: white !important;
 }
+
+/* Hospital card — indigo accent */
+.hospital-card {
+  border-top: 3px solid #6366f1;
+}
+.hospital-img {
+  background: #0f0f1a;
+}
+.hospital-img img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+/* YYC Connect — deep navy accent (#0D1B2A from site theme) */
+.yyc-card {
+  border-top: 3px solid #3b82f6;
+}
+.yyc-img {
+  background: #0d1b2a;
+}
+.yyc-img img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+/* ── Homepage project card with video below ── */
+.video-card {
+  flex-direction: column;
+}
+
+.video-card .project-info {
+  background: rgba(0,0,0,0.4);
+  width: 100%;
+}
+
+.card-video {
+  width: 100%;
+  background: #000;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  line-height: 0;
+}
+
+.card-video video {
+  width: 100%;
+  max-height: 340px;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
