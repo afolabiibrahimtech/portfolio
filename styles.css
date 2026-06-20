@@ -783,12 +783,16 @@ footer {
 
 /* ── Homepage project card with video below ── */
 .video-card {
-  flex-direction: column;
+  flex-direction: column !important;
+  grid-column: 1 / -1;        /* span full grid width */
+  max-width: 100%;
+  min-height: unset;
 }
 
 .video-card .project-info {
   background: rgba(0,0,0,0.4);
   width: 100%;
+  flex: unset;
 }
 
 .card-video {
@@ -796,12 +800,27 @@ footer {
   background: #000;
   border-top: 1px solid rgba(255,255,255,0.06);
   line-height: 0;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
 }
 
 .card-video video {
   width: 100%;
-  max-height: 340px;
+  height: auto;
+  max-height: 480px;
   display: block;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  background: #000;
+}
+
+/* SupportDesk — slate blue accent */
+.supportdesk-card {
+  border-top: 3px solid #475569;
+}
+.supportdesk-img {
+  background: #0f172a;
+}
+.supportdesk-img img {
+  object-fit: cover !important;
+  padding: 0 !important;
 }
